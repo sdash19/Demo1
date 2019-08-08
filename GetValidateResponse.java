@@ -30,5 +30,11 @@ public class GetValidateResponse {
 	  int resCode=response.getStatusCode();
 	  Assert.assertEquals(resCode, 200);
 	  
+	   
+	  String responseBody=response.asString();
+	  Headers header=response.getHeaders();
+	  System.out.println("Response data is :" +responseBody);
+	  System.out.println("Response header is:"+ header);
+	  
   }
 }
